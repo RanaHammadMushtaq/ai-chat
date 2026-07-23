@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react';
+'use client';
+
+import { useEffect, useState } from 'react';
 
 const HealthPage = () => {
     const [status, setStatus] = useState('Loading...');
@@ -13,7 +15,7 @@ const HealthPage = () => {
                 } else {
                     setStatus('Error fetching health status');
                 }
-            } catch (error) {
+            } catch {
                 setStatus('Error fetching health status');
             }
         };

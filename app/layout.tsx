@@ -1,7 +1,7 @@
-import React from 'react';
+import type { ReactNode } from 'react';
 import Navigation from './components/navigation';
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: { children: ReactNode }) => {
     return (
         <html lang="en">
             <head>
